@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--SECCIÓN DE INTRODUCCIÓN-->
+    <!--INTRODUCCIÓN-->
     <div class="seccion intro">
         <video id="sun" src="./Recursos/sun.mp4" autoplay loop muted></video>
         <h1>La energía solar es el <br>futuro <u>renovable</u></h1>
     </div>
-    <!--SECCIÓN DE DEFINICIONES-->
+    <!--DEFINICIONES-->
     <div class="seccion cards">
         <div class="card definicion">
             <h3>¿Qué es?</h3>
@@ -48,12 +48,65 @@
             </div>
         </div>
     </div>
-    <!--SECCIÓN DE INSTALACIÓN DE UN SISTEMA SOLAR-->
-    <div class="seccion instalacion"> <!--contenedor del carrusel-->
-        <h2>¿Cómo instalar un sistema solar?</h2> <!--título tipo "encabezado"-->
+    <!--FUNCIONAMIENTO DE UN SISTEMA SOLAR-->
+    <div class="seccion funcionamiento"> <!--contenedor del carrusel-->
+        <h2>¿Cómo funciona un sistema solar?</h2> <!--título tipo "encabezado"-->
         <div class="carrusel">
-            <!--queda pendiente realizar las cartas del carrusel-->
+            <div class="tarjeta">
+                <h3>Páneles solares</h3>
+                <img src="./Recursos/PanelesSolares.jpg" alt="Páneles solares" class="imagenesTarjeta">
+                <p>Capturan la luz del sol y la convierten en energía eléctrica (corriente continua - CC).</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Inversores fotovoltaicos</h3>
+                <img src="./Recursos/InversoresFotovoltaicos.jpg" alt="Inversores fotovoltaicos" class="imagenesTarjeta">
+                <p>Convierte la energía de CC a corriente alterna (CA), apta para usar en hogares y empresas.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Baterías</h3>
+                <img src="./Recursos/BateriasSolares.jpg" alt="Baterías" class="imagenesTarjeta">
+                <p>Almacenan energía para usar en horas sin sol.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Medidor Bidireccional</h3>
+                <img src="./Recursos/MedidorBidireccional.jpg" alt="Medidor bidireccional" class="imagenesTarjeta">
+                <p>Permite medir la energía consumida y la entregada a la red (en sistemas conectados a la red).</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Estructura Sistema Solar</h3>
+                <img src="./Recursos/EstructuraSistemaSolar.jpg" alt="Cableado y estructura" class="imagenesTarjeta">
+                <p>Soporte y conexión entre los equipos del sistema.</p>
+            </div>
         </div>
     </div>
+    <!--TIPOS DE SISTEMAS SOLARES-->
+    <div class="seccion tipos">
+        <h2>¿Qué tipos de sistemas solares hay?</h2>
+        <!--
+        Acá el diseño es estilo cuadrícula, mostrando cada div (contenedor) como una tarjeta, similar a la sección anterior
+        pero sin carrusel. EJEMPLO:
+                     _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    
+                    |                [TITULO]               |
+                    |                                       |
+                    |    [cuadro 1] [cuadro 2] [cuadro 3]   |
+                    |    [cuadro 1] [cuadro 2] [cuadro 3]   |
+                    |                                       |
+                    |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|                    
+        -->
+        <div class="cuadro">
+            <h3>On Grid (conectado a la red)</h3>
+            <p>Funciona junto a la red eléctrica. Ideal para hogares y empresas en ciudades.</p>
+        </div>
+        <div class="cuadro">
+            <h3>Off Grid (aislado)</h3>
+            <p>Usa baterías. Ideal para fincas, zonas sin cobertura eléctrica o puntos remotos.</p>
+        </div>
+        <div class="cuadro">
+            <h3>Híbrido</h3>
+            <p>Combinación de paneles, baterías y red eléctrica. Ofrece mayor autonomía.</p>
+        </div>
+    </div>
+    <!--SECCIÓN DE PREGUNTAS FREQUENTES: cosas como el mantenimiento, cuánto se puede ahorrar, si realmente vale la inversión a largo plazo.-->
+    
 </body>
 </html>
