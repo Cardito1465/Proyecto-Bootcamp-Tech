@@ -5,15 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
-    <title>Calculadora de energía</title>
+    <title>CALCULADORA DE ENERGÍA</title>
 </head>
 
 <body>
-    <div>
-        <h2>Calculadora</h2>
-        <input type="number" id="kwh">
-        <button type="button" onclick="resultado()">Calcular</button>
+
+    
+
+<div class="video-background">
+        <div class="video-foreground">
+            <iframe
+                src="https://www.youtube.com/embed/X6dJEAs0-Gk?autoplay=1&mute=1&loop=1&playlist=X6dJEAs0-Gk&controls=0&showinfo=0&modestbranding=1&rel=0"
+                frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+            </iframe>
+        </div>
     </div>
+
+   <div class="posicion">
+  <div class="panel">
+    <h2  class="titulo-cal">Calculadora de Energía Solar</h2>
+    <p class="texto-calculadora">Ingresa tu consumo mensual en kWh y descubre tu impacto solar.</p>
+    <input type="number" id="kwh" placeholder="Ej: 250">
+    <button type="button" onclick="resultado()">Calcular</button>
+    <div id="resultado"></div>
+  </div>
+</div>
 
 </body>
 
