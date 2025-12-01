@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Audiowide', sans-serif;
   color: white;
@@ -30,7 +29,7 @@ h1 {
 
 #sun {
   margin: auto;
-  min-width: 100vw;
+  max-width: 98vw;
   max-height: 100vh;
   rotate: 180deg;
 }
@@ -187,12 +186,12 @@ h1 {
 
 .card.definicion,
 .card.beneficios {
-  text-align: left; 
+  text-align: left;
 }
 
 .carrusel {
   width: 100%;
-  max-width: 1000px;  
+  max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -204,14 +203,22 @@ h1 {
 
 }
 
-.carrusel:hover{
+.carrusel:hover {
   animation: pulsoSolar 0.6s ease-out;
 }
 
 @keyframes pulsoSolar {
-  0%   { box-shadow: 0 0 10px rgba(255, 115, 0, 0.5); }
-  50%  { box-shadow: 0 0 40px rgba(255, 140, 0, 0.9); }
-  100% { box-shadow: 0 0 30px rgba(236, 89, 36, 0.9); }
+  0% {
+    box-shadow: 0 0 10px rgba(255, 115, 0, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(255, 140, 0, 0.9);
+  }
+
+  100% {
+    box-shadow: 0 0 30px rgba(236, 89, 36, 0.9);
+  }
 }
 
 
@@ -221,11 +228,11 @@ h1 {
 }
 
 .tarjeta {
-  flex: 0 0 100%;     
+  flex: 0 0 100%;
   box-sizing: border-box;
   padding: 1.5rem;
   text-align: center;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   border: 2px solid rgba(255, 102, 0, 0.6);
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 115, 0, 0.5);
@@ -233,11 +240,11 @@ h1 {
 
 .imagenesTarjeta {
   display: block;
-  margin: 0 auto 20px auto;    
-  width: 100%;                  
-  max-width: 400px;             
-  aspect-ratio: 4 / 3;        
-  object-fit: cover;           
+  margin: 0 auto 20px auto;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: 10px;
   border: 4px solid #ff9100;
   box-shadow: 0 0 15px rgba(255, 115, 0, 0.8);
@@ -272,16 +279,26 @@ h1 {
   opacity: 1;
 }
 
-.cuadro.uno , .cuadro.dos , .cuadro.tres {
+.cuadro.uno,
+.cuadro.dos,
+.cuadro.tres {
   border-left: 6px solid #ffa600;
   border-right: 6px solid #ffa600;
   animation: electricPulse 2s infinite;
 }
 
 @keyframes electricPulse {
-  0%   { box-shadow: 0 0 10px rgba(255, 115, 0, 0.5); }
-  50%  { box-shadow: 0 0 40px rgba(255, 140, 0, 0.9); }
-  100% { box-shadow: 0 0 30px rgba(236, 89, 36, 0.9); }
+  0% {
+    box-shadow: 0 0 10px rgba(255, 115, 0, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(255, 140, 0, 0.9);
+  }
+
+  100% {
+    box-shadow: 0 0 30px rgba(236, 89, 36, 0.9);
+  }
 }
 
 .cuadro.uno::before {
@@ -353,15 +370,15 @@ h1 {
 
 @keyframes glow {
   from {
-    text-shadow: 
+    text-shadow:
       0 0 10px #ffcc00,
       0 0 20px #ff6600,
       0 0 40px #ff0000;
   }
-  
+
 }
 
-.titulo3{
+.titulo3 {
   text-align: center;
   color: #e07d3b;
   text-shadow: 0 0 15px #ff9100, 0 0 30px #FF4500;
@@ -373,42 +390,42 @@ h1 {
 /*DISEÑO CALCULADORA*/
 
 .posicion {
-  
+
   display: flex;
-  justify-content: center;   
-  align-items: center;      
-  min-height: 100vh;         
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   padding: 2rem;
   box-sizing: border-box;
 }
 
 
 .panel {
-  
+
   max-width: 800px;
   margin: 5rem auto;
   padding: 2rem;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   border: 2px solid #ffaa00;
   border-radius: 30px;
-  box-shadow: 0 0 25px rgba(255,140,0,0.8);
+  box-shadow: 0 0 25px rgba(255, 140, 0, 0.8);
   text-align: center;
   position: relative;
-  
+
 }
 
 .panel h2 {
   color: #ffaa00;
   text-shadow: 0 0 15px #ff9100, 0 0 30px #ff4500;
   margin-bottom: 1rem;
-  
+
 }
 
-.texto-calculadora{
+.texto-calculadora {
   color: #e2d7c8;
   font-size: 1rem;
   margin-bottom: 1.5rem;
-  
+
 }
 
 input[type="number"] {
@@ -416,7 +433,7 @@ input[type="number"] {
   padding: 0.8rem;
   border-radius: 8px;
   border: 2px solid #ffaa00;
-  background: rgba(20,20,20,0.9);
+  background: rgba(20, 20, 20, 0.9);
   color: white;
   font-size: 1.2rem;
   text-align: center;
@@ -427,7 +444,7 @@ input[type="number"] {
 input[type="number"]:focus {
   outline: none;
   box-shadow: 0 0 20px #ffaa00, 0 0 40px #ff4500;
-  
+
 }
 
 button {
@@ -441,7 +458,7 @@ button {
   cursor: pointer;
   box-shadow: 0 0 15px #ff9100;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+
 }
 
 button:hover {
@@ -466,6 +483,7 @@ button:hover {
   transform: translateY(-50px);
   opacity: 0;
 }
+
 .posicion::after {
   content: "🪐";
   position: absolute;
@@ -475,6 +493,21 @@ button:hover {
   animation: descend 1.5s ease-out forwards;
   transform: translateY(-50px);
   opacity: 0;
+}
+
+.link-estilo.regresar {
+  position: absolute;
+  right: 0px;
+  animation: descend 1.5s ease-out forwards;
+  transform: translateY(-50px);
+}
+
+.link-estilo.regresarGrafica {
+  position: default;
+  top: 50px;
+  left: 0px;
+  animation: descend 1.5s ease-out forwards;
+  transform: translateY(-10px);
 }
 
 .panel {
@@ -499,13 +532,50 @@ button:hover {
 }
 
 @keyframes flotar {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-10px); }
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 
+/* ESTILIZADO DE LA TABLA */
 
 
+#tabla {
+  width: 90%;
+  background-color: rgb(65, 65, 65);
+  min-height: 90vh;
+  max-height: 90vh;
+  margin-top: 5%;
+  margin-left: 5%;
+  overflow-y: auto;
+  border-radius: 15px;
+}
 
+#graficos {
+  border-radius: 10px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
 
+#grafico-barra {
+  margin-left: 5%;
+}
 
+#grafico-torta {
+  margin-left: 5%;
+}
+
+.estandar-graficos {
+  width: 42.5%;
+  height: 60vh;
+  background-color: rgb(56, 56, 56);
+  color: white;
+}
